@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/zarajskysam/ajs/issues"
   },
-  "homepage": "https://github.com/zarajskysam/ajs#readme"
+  "homepage": "https://github.com/zarajskysam/ajs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
 }
